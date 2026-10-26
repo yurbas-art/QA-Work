@@ -23,6 +23,14 @@ test.describe('Функциональные и структурные тесты
     await expect(hsePage.educationLink).toHaveAttribute('href', /education/);
   });
 
+  // 3. Проверка блока "Новости" на главной странице
+  test('Тест 3: Наличие блока новостей и первой новости', async () => {
+    await expect(hsePage.newsSection).toBeVisible();
+    // Проверяем, что внутри секции есть хотя бы одна карточка новости со ссылкой
+    await expect(hsePage.firstNewsLink).toBeVisible();
+    await expect(hsePage.firstNewsLink).toHaveAttribute('href', /\/news\//);
+  });
+
   // 5. Проверка ссылок на социальные сети в футере (например, ВКонтакте или Telegram)
   test('Тест 5: Ссылка на соцсети ВШЭ в футере', async () => {
     await hsePage.scrollToBottom();
