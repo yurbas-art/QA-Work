@@ -22,3 +22,11 @@ test.describe('Функциональные и структурные тесты
     // Дополнительная проверка: убедимся, что ссылка действительно ведет на нужный URL
     await expect(hsePage.educationLink).toHaveAttribute('href', /education/);
   });
+
+  // 5. Проверка ссылок на социальные сети в футере (например, ВКонтакте или Telegram)
+  test('Тест 5: Ссылка на соцсети ВШЭ в футере', async () => {
+    await hsePage.scrollToBottom();
+    // Ищем ссылку, содержащую текст "ВКонтакте" или иконку VK
+    await expect(hsePage.vkSocialLink).toBeVisible();
+    await expect(hsePage.vkSocialLink).toHaveAttribute('href', /vk\.com/);
+  });
