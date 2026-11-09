@@ -1,0 +1,13 @@
+{
+  "name": "farpost-playwright-tests",
+  "version": "1.0.0",
+  "description": "Автотесты для задания по практике",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0"
+  }
+}
