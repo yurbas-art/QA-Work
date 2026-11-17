@@ -1,13 +1,41 @@
-import { defineConfig } from '@playwright/test';
+﻿import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
+  testDir: './tests/specs',
+  outputDir: './test-results',
+  timeout: 60_000,
+  expect: { timeout: 15_000 },
+  retries: 1,
+  workers: 1,
+  reporter: [['list'], ['html', { open: 'never' }]],
+
   use: {
-    // 1. Устанавливаем реалистичный User-Agent (как у обычного Chrome)
-    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-    
-    launchOptions: {
-      // 2. Отключаем флаг, который сайты используют для детекции автоматизации
-      args: ['--disable-blink-features=AutomationControlled'],
-    },
+    baseURL: 'https://www.dns-shop.ru',
+    // DNS блокирует headless по фингерпринту — нужен реальный браузер.
+    headless: false,
+    viewport: { width: 1440, height: 900 },
+    locale: 'ru-RU',
+    timezoneId: 'Europe/Moscow',
+    trace: 'retain-on-failure',
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+    actionTimeout: 15_000,
+    navigationTimeout: 30_000,
   },
+
+  projects: [
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        launchOptions: {
+          args: [
+            '--disable-blink-features=AutomationControlled',
+            '--disable-features=IsolateOrigins,site-per-process',
+            '--no-default-browser-check',
+          ],
+        },
+      },
+    },
+  ],
 });
