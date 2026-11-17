@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/tests';
 
 test.describe('Баг ID 1: Дублирование атрибута id', () => {
 
