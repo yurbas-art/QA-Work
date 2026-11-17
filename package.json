@@ -1,0 +1,28 @@
+{
+  "name": "qa-work",
+  "version": "1.0.0",
+  "description": "> 🎓 Учебный репозиторий группы **БИН-24-1**  \r > Репозиторий для практики автоматизированного тестирования, работы с Git и написания качественных автотестов.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurbas-art/QA-Work.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yurbas-art/QA-Work/issues"
+  },
+  "homepage": "https://github.com/yurbas-art/QA-Work#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "typescript": "^7.0.2"
+  }
+}
