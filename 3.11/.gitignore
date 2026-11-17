@@ -1,0 +1,13 @@
+
+# Playwright Test Reports & Artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+test_reports/
+
+# Environment Variables (Local configurations)
+.env
+.env.local
+.env.*.local
+! .env.example
