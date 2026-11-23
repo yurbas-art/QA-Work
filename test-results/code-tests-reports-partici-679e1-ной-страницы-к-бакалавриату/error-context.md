@@ -1,0 +1,481 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: code\tests\reports\participant-6.spec.ts >> Пользователь может перейти от главной страницы к бакалавриату
+- Location: code\tests\reports\participant-6.spec.ts:3:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic:
+      - link [ref=e4] [cursor=pointer]:
+        - /url: /
+        - paragraph [ref=e11]: Главная
+      - link [ref=e13] [cursor=pointer]:
+        - /url: /news
+        - paragraph [ref=e19]: Новости
+      - link [ref=e21] [cursor=pointer]:
+        - /url: /menu
+        - paragraph [ref=e27]: Меню
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e33]:
+            - link "Версия для слабовидящих" [ref=e34] [cursor=pointer]:
+              - /url: https://itmo.ru/main?tmpl=clear
+            - link "Старая версия сайта" [ref=e38] [cursor=pointer]:
+              - /url: https://itmo.ru/main
+            - generic [ref=e39]:
+              - link "English" [ref=e40] [cursor=pointer]:
+                - /url: https://en.itmo.ru/
+              - link "中文版" [ref=e43] [cursor=pointer]:
+                - /url: https://cn.itmo.ru/
+              - link "Español" [ref=e47] [cursor=pointer]:
+                - /url: https://es.itmo.ru/
+          - heading "больше чем университет" [level=5] [ref=e186]
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - list
+              - list
+            - generic [ref=e193]:
+              - link [ref=e194] [cursor=pointer]:
+                - /url: https://news.itmo.ru/ru/science/it/news/15078
+                - paragraph [ref=e196]: 21.10.2026
+                - generic [ref=e197]:
+                  - 'img "Фото: Дмитрий Григорьев / ITMO NEWS" [ref=e198]'
+                  - heading "ИТМО получил 500 миллионов рублей на создание Центра развития промышленной робототехники" [level=5] [ref=e200]
+              - link [ref=e201] [cursor=pointer]:
+                - /url: https://news.itmo.ru/ru/science/life_science/news/15099
+                - paragraph [ref=e203]: 05.11.2026
+                - generic [ref=e204]:
+                  - 'img "Фото: Новый Физтех ИТМО" [ref=e205]'
+                  - 'heading "Оптические чипы для ускорения обработки данных: в ИТМО запустили новую молодежную лабораторию" [level=5] [ref=e207]'
+        - generic [ref=e208]:
+          - heading "ЦИФРЫ И ФАКТЫ" [level=2] [ref=e211]
+          - generic [ref=e212] [cursor=pointer]: итмо в рейтингах
+          - generic [ref=e216]:
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - heading "Лидер Программы «Приоритет 2030»" [level=6] [ref=e227]
+                - heading "Лидер проекта «Передовые инженерные школы»" [level=6] [ref=e234]
+                - heading "Лидер по качеству подготовки специалистов в области ИИ" [level=6] [ref=e241]
+                - heading "Единственный в мире семикратный победитель международного чемпионата по программированию ICPC" [level=6] [ref=e248]
+              - generic [ref=e249]:
+                - heading "Первый неклассический университет" [level=6] [ref=e256]
+                - heading "Собственные PhD" [level=6] [ref=e263]
+                - generic [ref=e269]:
+                  - heading "Вторые в России" [level=6] [ref=e270]
+                  - generic [ref=e271]: по уровню зарплат выпускников IT-специальностей
+                - generic [ref=e277]:
+                  - heading "80%" [level=6] [ref=e278]
+                  - generic [ref=e279]: доля молодых ученых
+            - generic [ref=e281]:
+              - generic [ref=e284]:
+                - generic [ref=e285]: "Альянс в сфере ИИ: рейтинг вузов по качеству подготовки специалистов в области искусственного интеллекта"
+                - generic [ref=e286]:
+                  - generic [ref=e287]: A+
+                  - generic [ref=e288]: "2026"
+              - generic [ref=e292]:
+                - generic [ref=e293]: "Минтруд РФ: национальный рейтинг трудоустройства"
+                - generic [ref=e294]:
+                  - generic [ref=e295]: 52 укрупненные группы вместо 8 областей
+                  - generic [ref=e296]: "2026"
+              - generic [ref=e300]:
+                - generic [ref=e301]: "Superjob: рейтинг лучших вузов России по уровню зарплат выпускников в IT-сфере"
+                - generic [ref=e302]:
+                  - generic [ref=e303]: топ-3
+                  - generic [ref=e304]: "2026"
+              - generic [ref=e308]:
+                - generic [ref=e309]: Рейтинг лучших российских университетов по версии Forbes
+                - generic [ref=e310]:
+                  - generic [ref=e311]: 4 место
+                  - generic [ref=e312]: "2026"
+              - generic [ref=e316]:
+                - generic [ref=e317]: Предметный рейтинг ARWU Automation & Control
+                - generic [ref=e318]:
+                  - generic [ref=e319]: 151-200 место
+                  - generic [ref=e320]: "2026"
+              - generic [ref=e324]:
+                - generic [ref=e325]: Предметный рейтинг QS Computer Science & Information Systems
+                - generic [ref=e326]:
+                  - generic [ref=e327]: 251-300 место
+                  - generic [ref=e328]: "2026"
+              - generic [ref=e332]:
+                - generic [ref=e333]: Предметный рейтинг U.S. News Optics
+                - generic [ref=e334]:
+                  - generic [ref=e335]: 102 место
+                  - generic [ref=e336]: "2026"
+              - generic [ref=e340]:
+                - generic [ref=e341]: Мониторинг качества приема в российские университеты
+                - generic [ref=e342]:
+                  - generic [ref=e343]: 6 место
+                  - generic [ref=e344]: "2025"
+              - generic [ref=e348]:
+                - generic [ref=e349]: Рейтинг вузов цифровой экономики среди университетов Москвы и Петербурга, где лучше всего готовят IT-специалистов
+                - generic [ref=e350]:
+                  - generic [ref=e351]: 5 место
+                  - generic [ref=e352]: "2025"
+              - link "Больше о рейтингах →" [ref=e354] [cursor=pointer]:
+                - /url: https://itmo.ru/ru/ratings/ratings.htm
+        - generic [ref=e356]:
+          - heading "ОБРАЗОВАНИЕ" [level=2] [ref=e357]
+          - generic [ref=e361]:
+            - generic [ref=e364]:
+              - heading "СТУДЕНТЫ 2.0" [level=3] [ref=e365]
+              - generic [ref=e367]:
+                - generic [ref=e368] [cursor=pointer]: Индивидуальная траектория
+                - paragraph [ref=e371]: Сами выбирают специализации, дисциплины, формат (online/offline) и уровень сложности обучения, преподавателя и время занятий
+              - img "First Slide Image" [ref=e373]
+              - generic [ref=e374]:
+                - generic [ref=e375] [cursor=pointer]: Soft Skills
+                - paragraph [ref=e378]: Учатся всё успевать, выстраивать коммуникацию, успешно представлять результаты исследования и при этом сохранять душевное равновесие
+              - generic [ref=e379]:
+                - generic [ref=e380] [cursor=pointer]: Дипломные работы в разных форматах
+                - paragraph [ref=e383]: Защищают диплом в традиционной форме или в виде научной статьи, бизнес или арт-проекта
+            - generic [ref=e386]:
+              - heading "СТУДЕНТЫ 2.0" [level=3] [ref=e387]
+              - img "Second Slide Image" [ref=e391]
+              - generic [ref=e392]: "Не выбирают: работа или учеба?"
+              - list [ref=e393]:
+                - listitem [ref=e394]:
+                  - link "Работают в подразделениях ИТМО и даже обучают студентов младших курсов" [ref=e395] [cursor=pointer]:
+                    - /url: https://student.itmo.ru/ru/mentors/
+                - listitem [ref=e396]:
+                  - link "Создают и реализуют свои проекты в конкурсе инициатив по развитию университета" [ref=e397] [cursor=pointer]:
+                    - /url: http://future.itmo.ru/
+                - listitem [ref=e398]:
+                  - link "Работают в компаниях-партнёрах, Центр карьеры обучающихся поможет продумать карьерный путь и найти подходящие вакансии и стажировки" [ref=e399] [cursor=pointer]:
+                    - /url: https://careers.itmo.ru/
+            - generic [ref=e402]:
+              - heading "НЕ ТОЛЬКО IT" [level=3] [ref=e403]
+              - generic [ref=e404]:
+                - list [ref=e405]:
+                  - listitem [ref=e406] [cursor=pointer]: Искусственный интеллект
+                  - listitem [ref=e407] [cursor=pointer]: Информационные технологии
+                  - listitem [ref=e408] [cursor=pointer]: Физика
+                  - listitem [ref=e409] [cursor=pointer]: Науки о жизни
+                  - listitem [ref=e410] [cursor=pointer]: Инженерия
+                  - listitem [ref=e411] [cursor=pointer]: Экономика и инновации
+                  - listitem [ref=e412] [cursor=pointer]: Междисциплинарные исследования
+                - generic [ref=e413]:
+                  - img "image" [ref=e414]
+                  - paragraph [ref=e415]: Сильный ИИ, генеративные технологии, анализ данных, большие языковые модели
+            - generic [ref=e418]:
+              - heading "ОБРАЗОВАНИЕ ДЛЯ ВСЕХ" [level=3] [ref=e419]
+              - link "Курсы для школьников" [ref=e420] [cursor=pointer]:
+                - /url: https://start.itmo.ru
+              - link "Бакалавриат" [ref=e422] [cursor=pointer]:
+                - /url: https://abit.itmo.ru/bachelor
+              - link "Магистратура" [ref=e424] [cursor=pointer]:
+                - /url: https://abit.itmo.ru/master
+              - link "Аспирантура" [ref=e426] [cursor=pointer]:
+                - /url: https://abit.itmo.ru/phd
+              - link "Онлайн-курсы" [ref=e428] [cursor=pointer]:
+                - /url: https://online.itmo.ru
+              - generic [ref=e436]:
+                - generic [ref=e437]: Хочешь поступить не как все?
+                - link "Да" [ref=e438] [cursor=pointer]:
+                  - /url: https://stars.itmo.ru
+              - link "Абитуриентам" [ref=e441] [cursor=pointer]:
+                - /url: https://abit.itmo.ru
+        - generic [ref=e443]:
+          - heading "НАУКА" [level=2] [ref=e444]
+          - generic [ref=e448]:
+            - generic [ref=e451]:
+              - heading "В ЦИФРАХ" [level=3] [ref=e452]
+              - generic [ref=e453]:
+                - generic [ref=e455]:
+                  - generic:
+                    - generic [ref=e464]:
+                      - generic [ref=e465]: Давай поисследуем
+                      - generic [ref=e469]:
+                        - button "Yes" [ref=e470]
+                        - button "No" [ref=e472]
+                    - generic [ref=e478]:
+                      - generic [ref=e479]: Хотите управлять научной группой в ИТМО?
+                      - generic [ref=e483]:
+                        - link "Yes" [ref=e484] [cursor=pointer]:
+                          - /url: https://pi.itmo.ru/
+                        - button "No" [ref=e486]
+                  - img "image" [ref=e488]
+                - generic [ref=e489]:
+                  - generic [ref=e490]:
+                    - heading "98" [level=6] [ref=e491]
+                    - paragraph [ref=e492]: научных центров, институтов, лабораторий
+                  - generic [ref=e493]:
+                    - heading "1500" [level=6] [ref=e494]
+                    - paragraph [ref=e495]: статей в рецензируемых научных журналах за 2024 год
+                  - generic [ref=e496]:
+                    - heading "2000" [level=6] [ref=e497]
+                    - paragraph [ref=e498]: студентов занимаются наукой
+            - generic [ref=e501]:
+              - heading "НАПРАВЛЕНИЯ" [level=3] [ref=e502]
+              - generic [ref=e503]:
+                - generic [ref=e504]:
+                  - img "woman" [ref=e510]
+                  - list [ref=e511]:
+                    - listitem [ref=e512]: Искусственный интеллект
+                    - listitem [ref=e513]: Интеллектуальные технологии, робототехника и информационная безопасность
+                    - listitem [ref=e514]: Науки о жизни и здоровье
+                - generic [ref=e515]:
+                  - img "man" [ref=e521]
+                  - list [ref=e522]:
+                    - listitem [ref=e523]: Естественные науки
+                    - listitem [ref=e524]: «Умные» материалы, наноматериалы и нанотехнологии
+                    - listitem [ref=e525]: ИТ в экономике, социальной сфере и искусстве
+                    - listitem [ref=e526]: Фотоника, оптика и квантовые коммуникации
+        - generic [ref=e527]:
+          - heading "СМОТРИМ В БУДУЩЕЕ" [level=2] [ref=e528]
+          - generic [ref=e532]:
+            - generic [ref=e535]:
+              - heading "Приоритет 2030" [level=3] [ref=e537]
+              - generic [ref=e538]:
+                - generic [ref=e539]:
+                  - paragraph [ref=e540]:
+                    - link "Стратегические цели" [ref=e541] [cursor=pointer]:
+                      - /url: https://2030.itmo.ru/lkpriority2030
+                  - list [ref=e542]:
+                    - listitem [ref=e543]:
+                      - link "ИТМО ― корпорация талантов" [ref=e544] [cursor=pointer]:
+                        - /url: https://2030.itmo.ru/page65146637.html
+                    - listitem [ref=e545]:
+                      - link "Выпускники ИТМО для технологического лидерства" [ref=e546] [cursor=pointer]:
+                        - /url: https://2030.itmo.ru/page65156635.html
+                    - listitem [ref=e547]:
+                      - link "Технологическая корпорация ИТМО" [ref=e548] [cursor=pointer]:
+                        - /url: https://2030.itmo.ru/page65157773.html
+                  - link "Подробнее →" [ref=e549] [cursor=pointer]:
+                    - /url: https://2030.itmo.ru/
+                - img "hyperjump image" [ref=e556]
+            - generic [ref=e559]:
+              - heading "ИТМО ХАЙПАРК" [level=3] [ref=e561]
+              - generic [ref=e562]:
+                - generic [ref=e563]:
+                  - paragraph [ref=e564]: Комплексный научно-образовательный центр мирового уровня. ИТМО Хайпарк строится на юге Санкт-Петербурга. Это будет второй кампус ИТМО, а главное – среда для личностного роста, профессионального и творческого развития лучших студентов, ученых, преподавателей и сотрудников со всего мира.
+                  - link "Подробнее →" [ref=e565] [cursor=pointer]:
+                    - /url: https://hp.itmo.ru/
+                - img "highpark image" [ref=e572]
+            - generic [ref=e575]:
+              - heading "КЛЮЧЕВЫЕ ПРОЕКТЫ" [level=3] [ref=e577]
+              - generic [ref=e578]:
+                - list [ref=e579]:
+                  - listitem [ref=e580] [cursor=pointer]: Национальный центр когнитивных разработок и Исследовательский центр «Сильный искусственный интеллект в промышленности»
+                  - listitem [ref=e581] [cursor=pointer]: Передовая инженерная школа
+                  - listitem [ref=e582] [cursor=pointer]: Инновационный индустриальный центр «Газпром нефть» — ИТМО
+                - link [ref=e584] [cursor=pointer]:
+                  - /url: https://actcognitive.org/
+                  - paragraph [ref=e586]: Разрабатывают продукты и сервисы на основе машинного обучения, и готовят самообучаемые системы, имитирующие высшие когнитивные функции человека.
+                  - img "image" [ref=e587]
+        - generic [ref=e588]:
+          - heading "ПЕРВЫЙ НЕКЛАССИЧЕСКИЙ" [level=2] [ref=e589]
+          - generic [ref=e593]:
+            - generic [ref=e596]:
+              - heading "МЕРОПРИЯТИЯ" [level=3] [ref=e598]
+              - generic [ref=e599]:
+                - link [ref=e600] [cursor=pointer]:
+                  - /url: https://news.itmo.ru/ru/university_live/leisure/news/14337/
+                  - heading "Открытая велопрогулка с ректором" [level=6] [ref=e601]
+                  - paragraph [ref=e602]: Уже больше 10 лет мы все вместе катаемся, давайте с нами!
+                - link [ref=e603] [cursor=pointer]:
+                  - /url: https://itmo.events/events/110349
+                  - heading "ITMO FAMILY DAY" [level=6] [ref=e604]
+                  - paragraph [ref=e605]: Самый неклассический выпускной и open air фестиваль
+                - link [ref=e606] [cursor=pointer]:
+                  - /url: https://love.itmo.ru/
+                  - heading "ITMO LOVE" [level=6] [ref=e607]
+                  - paragraph [ref=e608]: Первая премия для любимых коллег, которые меняют университет к лучшему
+                - link [ref=e609] [cursor=pointer]:
+                  - /url: https://itmo.events/
+                  - heading "Все события" [level=6] [ref=e610]
+                  - paragraph [ref=e611]: Больше мероприятий на itmo.events
+            - generic [ref=e614]:
+              - heading "Пространства" [level=3] [ref=e616]
+              - generic [ref=e617]:
+                - link "Учебные корпуса" [ref=e618] [cursor=pointer]:
+                  - /url: /
+                - link "Общественные пространства" [ref=e619] [cursor=pointer]:
+                  - /url: /
+                - link "Общежития" [ref=e620] [cursor=pointer]:
+                  - /url: /
+                - link "Хайпарк" [ref=e621] [cursor=pointer]:
+                  - /url: /
+              - generic [ref=e622]:
+                - list [ref=e624]:
+                  - listitem [ref=e625] [cursor=pointer]:
+                    - paragraph [ref=e626]: Кронверкский проспект, д. 49
+                    - paragraph [ref=e629]: Горьковская, Чкаловская
+                  - listitem [ref=e630] [cursor=pointer]:
+                    - paragraph [ref=e631]: Улица Ломоносова, д. 9
+                    - paragraph [ref=e634]: Достоевская, Владимирская, Звенигородская
+                  - listitem [ref=e635] [cursor=pointer]:
+                    - paragraph [ref=e636]: Переулок Гривцова, д. 14-16
+                    - paragraph [ref=e639]: Садовая, Спасская, Сенная площадь
+                  - listitem [ref=e640] [cursor=pointer]:
+                    - paragraph [ref=e641]: Улица Чайковского, д. 11/2
+                    - paragraph [ref=e644]: Чернышевская
+                  - listitem [ref=e645] [cursor=pointer]:
+                    - paragraph [ref=e646]: Биржевая линия, д. 14-16
+                    - paragraph [ref=e649]: Спортивная, Василеостровская
+                  - listitem [ref=e650] [cursor=pointer]:
+                    - paragraph [ref=e651]: Биржевая линия, д. 4
+                    - paragraph [ref=e654]: Спортивная, Василеостровская
+                  - listitem [ref=e655] [cursor=pointer]:
+                    - paragraph [ref=e656]: Песочная наб., д 14
+                    - paragraph [ref=e659]: Петроградская, Черная речка
+                - generic [ref=e664]:
+                  - generic:
+                    - generic [ref=e669]:
+                      - generic [ref=e671]:
+                        - text: © Яндекс
+                        - link "Условия использования" [ref=e673] [cursor=pointer]:
+                          - /url: https://yandex.ru/legal/maps_termsofuse/?lang=ru
+                      - link [ref=e675] [cursor=pointer]:
+                        - /url: ""
+                    - generic "Открыть в Яндекс Картах" [ref=e678]
+                  - generic [ref=e685] [cursor=pointer]
+        - generic [ref=e694]:
+          - heading "вместе с итмо" [level=2] [ref=e695]
+          - generic [ref=e696]:
+            - link "news person Университет ИТМО Знаем, чем украсить ваш понедельник 😏" [ref=e697] [cursor=pointer]:
+              - /url: https://vk.com/itmoru?w=wall-94_59772
+              - generic [ref=e698]:
+                - img "news" [ref=e700]
+                - generic [ref=e701]:
+                  - generic [ref=e702]:
+                    - img "person" [ref=e703]
+                    - generic [ref=e704]: Университет ИТМО
+                  - text: Знаем, чем украсить ваш понедельник 😏
+            - link "news person Университет ИТМО Большой День математика от ИТМО и Яндекс Образования!" [ref=e705] [cursor=pointer]:
+              - /url: https://vk.com/itmoru?w=wall-94_59771
+              - generic [ref=e706]:
+                - img "news" [ref=e708]
+                - generic [ref=e709]:
+                  - generic [ref=e710]:
+                    - img "person" [ref=e711]
+                    - generic [ref=e712]: Университет ИТМО
+                  - text: Большой День математика от ИТМО и Яндекс Образования!
+            - link "news person Университет ИТМО ИИ-лидерам — ИИ-премию!" [ref=e713] [cursor=pointer]:
+              - /url: https://vk.com/itmoru?w=wall-94_59770
+              - generic [ref=e714]:
+                - img "news" [ref=e716]
+                - generic [ref=e717]:
+                  - generic [ref=e718]:
+                    - img "person" [ref=e719]
+                    - generic [ref=e720]: Университет ИТМО
+                  - text: ИИ-лидерам — ИИ-премию!
+            - link "news person Университет ИТМО С днём преподавателя высшей школы!" [ref=e721] [cursor=pointer]:
+              - /url: https://vk.com/itmoru?w=wall-94_59767
+              - generic [ref=e722]:
+                - img "news" [ref=e724]
+                - generic [ref=e725]:
+                  - generic [ref=e726]:
+                    - img "person" [ref=e727]
+                    - generic [ref=e728]: Университет ИТМО
+                  - text: С днём преподавателя высшей школы!
+        - generic [ref=e729]:
+          - generic [ref=e730]:
+            - generic [ref=e736]:
+              - generic [ref=e737]: Будьте с нами
+              - link [ref=e738] [cursor=pointer]:
+                - /url: https://vk.com/itmoru
+              - link [ref=e741] [cursor=pointer]:
+                - /url: https://www.youtube.com/spbifmo
+              - link [ref=e744] [cursor=pointer]:
+                - /url: https://telegram.me/itmoru
+              - link [ref=e747] [cursor=pointer]:
+                - /url: https://ok.ru/itmo
+            - generic [ref=e750]:
+              - generic [ref=e751]:
+                - generic [ref=e752]: Университет ИТМО © 1993-2026
+                - generic [ref=e753]: 197198, г. Санкт-Петербург, Кронверкский проспект, д.49, литер А. (Вход со стороны Сытнинской ул.)
+                - generic [ref=e754]:
+                  - link "Правила использования информации в доменной зоне itmo.ru" [ref=e755] [cursor=pointer]:
+                    - /url: https://itmo.ru/images/pages/79/Pravila_ispolzovanija_informacii.pdf
+                  - link "Политика по обработке Персональных данных" [ref=e756] [cursor=pointer]:
+                    - /url: https://itmo.ru/file/pages/79/personal_data_policy.pdf
+              - list [ref=e758]:
+                - listitem [ref=e759]:
+                  - link "Сведения об образовательной организации" [ref=e760] [cursor=pointer]:
+                    - /url: https://itmo.ru/sveden/svedeniya_ob_obrazovatelnoy_organizacii.htm
+                - listitem [ref=e761]:
+                  - link "Лицензия и аккредитация" [ref=e762] [cursor=pointer]:
+                    - /url: https://itmo.ru/ru/page/217/licenziya_i_akkreditaciya.htm
+                - listitem [ref=e763]:
+                  - link "Устав" [ref=e764] [cursor=pointer]:
+                    - /url: https://itmo.ru/ru/page/220/ustav.htm
+                - listitem [ref=e765]:
+                  - link "Реквизиты" [ref=e766] [cursor=pointer]:
+                    - /url: https://itmo.ru/sveden/budget/
+                - listitem [ref=e767]:
+                  - link "Противодействие коррупции" [ref=e768] [cursor=pointer]:
+                    - /url: https://itmo.ru/ru/page/99/protivodeystvie_korrupcii.htm
+                - listitem [ref=e769]:
+                  - link "Персоналии" [ref=e770] [cursor=pointer]:
+                    - /url: https://itmo.ru/ru/personlist/personalii_a-ya.htm
+                - listitem [ref=e771]:
+                  - link "Телефонный справочник" [ref=e772] [cursor=pointer]:
+                    - /url: https://itmo.ru/ru/phonebook/telefonnyy_spravochnik.htm
+                - listitem
+              - generic [ref=e773]:
+                - list [ref=e774]:
+                  - listitem [ref=e775]:
+                    - generic [ref=e776]: Канцелярия
+                    - link "+7 (812) 480-00-00" [ref=e777] [cursor=pointer]:
+                      - /url: tel:+7 (812) 480-00-00
+                    - generic [ref=e778]: "Факс: +7 (812) 232-23-07"
+                    - link "od@itmo.ru" [ref=e779] [cursor=pointer]:
+                      - /url: mailto:od@itmo.ru
+                  - listitem [ref=e780]:
+                    - generic [ref=e781]: Приёмная комиссия
+                    - link "+7 (812) 480-04-80" [ref=e782] [cursor=pointer]:
+                      - /url: tel:+7 (812) 480-04-80
+                    - link "abit@itmo.ru" [ref=e783] [cursor=pointer]:
+                      - /url: mailto:abit@itmo.ru
+                  - listitem [ref=e784]:
+                    - generic [ref=e785]: Центр рекрутинга
+                    - link:
+                      - /url: tel:undefined
+                    - link "job@itmo.ru" [ref=e786] [cursor=pointer]:
+                      - /url: mailto:job@itmo.ru
+                - list [ref=e787]:
+                  - listitem [ref=e788]:
+                    - generic [ref=e789]: Студенческий офис
+                    - link "+7 (812) 607-04-74" [ref=e790] [cursor=pointer]:
+                      - /url: tel:+7 (812) 607-04-74
+                    - link "so@itmo.ru" [ref=e791] [cursor=pointer]:
+                      - /url: mailto:so@itmo.ru
+                  - listitem [ref=e792]:
+                    - generic [ref=e793]: Офис поддержки сотрудников
+                    - link "+7 (812) 607-02-50" [ref=e794] [cursor=pointer]:
+                      - /url: tel:+7 (812) 607-02-50
+                    - link "faculty@itmo.ru" [ref=e795] [cursor=pointer]:
+                      - /url: mailto:faculty@itmo.ru
+                  - listitem [ref=e796]:
+                    - generic [ref=e797]: Пресс-служба
+                    - link "+7 (900) 630-00-10" [ref=e798] [cursor=pointer]:
+                      - /url: tel:+7 (900) 630-00-10
+                    - link "+7 (931) 238-46-72" [ref=e799] [cursor=pointer]:
+                      - /url: tel:+7 (931) 238-46-72
+                    - link "+7 (950) 240-15-62" [ref=e800] [cursor=pointer]:
+                      - /url: tel:+7 (950) 240-15-62
+                    - link "pressa@itmo.ru" [ref=e801] [cursor=pointer]:
+                      - /url: mailto:pressa@itmo.ru
+          - generic [ref=e802]:
+            - generic [ref=e803]: Федеральное государственное автономное образовательное учреждение высшего образования «Национальный исследовательский университет ИТМО»
+            - link "Минобрнауки" [ref=e804] [cursor=pointer]:
+              - /url: https://minobrnauki.gov.ru/
+  - alert [ref=e805]
+```
