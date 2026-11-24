@@ -1,0 +1,12 @@
+{
+  "name": "green-extrusion-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "typescript": "^7.0.2"
+  }
+}
